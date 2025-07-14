@@ -2,7 +2,7 @@
 // import { Spinner, Table, Button, Collapse } from 'react-bootstrap';
 // import Sidebar from './Sidebar';
 
-// const BASE_URL = "http://localhost:8000/api";
+// const BASE_URL = "https://ecom-6ffz.onrender.com/api";
 
 // const AdminOrderList = () => {
 //   const [orders, setOrders] = useState([]);
@@ -113,7 +113,7 @@ import { Spinner, Table, Button, Collapse } from 'react-bootstrap';
 import Sidebar from './Sidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const BASE_URL = "http://localhost:8000/api";
+const BASE_URL = "https://ecom-6ffz.onrender.com/api";
 
 const AdminOrderList = () => {
   const [orders, setOrders] = useState([]);

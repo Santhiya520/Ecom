@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Card, Button, Row, Col, Dropdown, Spinner } from "react-bootstrap";
 import { useCart } from "./CartContext";
 
-const BASE_URL = "http://localhost:8000/api";
+const BASE_URL = "https://ecom-6ffz.onrender.com/api";
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);

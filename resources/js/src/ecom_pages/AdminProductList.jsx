@@ -3,7 +3,7 @@
 // import { Button, Table, Spinner, Modal, Form } from 'react-bootstrap';
 // import ProductFormModal from './ProductFormModal';
 
-// const BASE_URL = 'http://localhost:8000/api';
+// const BASE_URL = 'https://ecom-6ffz.onrender.com/api';
 
 // const AdminProductList = () => {
 //   const [products, setProducts] = useState([]);
@@ -79,7 +79,7 @@
 //                   <td>{p.id}</td>
 //                   <td>
 //                     {p.image && (
-//                       <img src={`http://localhost:8000/${p.image}`} alt="product" width="50" />
+//                       <img src={`https://ecom-6ffz.onrender.com/${p.image}`} alt="product" width="50" />
 //                     )}
 //                   </td>
 //                   <td>{p.name}</td>
@@ -125,7 +125,7 @@ import ProductFormModal from './ProductFormModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './Dashboard.css';
 
-const BASE_URL = 'http://localhost:8000/api';
+const BASE_URL = 'https://ecom-6ffz.onrender.com/api';
 
 const AdminProductList = () => {
   const [products, setProducts] = useState([]);
@@ -224,7 +224,7 @@ const AdminProductList = () => {
                     <td>
                       {p.image && (
                         <img
-                          src={`http://localhost:8000/${p.image}`}
+                          src={`https://ecom-6ffz.onrender.com/${p.image}`}
                           alt="product"
                           width="50"
                           height="50"

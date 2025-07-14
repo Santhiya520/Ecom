@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const BASE_URL = "http://localhost:8000/api/";
+const BASE_URL = "https://ecom-6ffz.onrender.com/api/";
 
 const RegisterForm = () => {
   const navigate = useNavigate();

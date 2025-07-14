@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { FaUserCircle, FaShoppingCart } from 'react-icons/fa';
 import { useCart } from './CartContext';
 
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://ecom-6ffz.onrender.com";
 // 🧁 Helper: Read cookie value
 function getCookie(name) {
   const value = `; ${document.cookie}`;

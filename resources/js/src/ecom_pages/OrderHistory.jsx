@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Collapse, Spinner } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-const BASE_URL = "http://localhost:8000/api";
+const BASE_URL = "https://ecom-6ffz.onrender.com/api";
 
 const OrderHistory = () => {
   const [orders, setOrders] = useState([]);

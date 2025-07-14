@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const CartContext = createContext();
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://ecom-6ffz.onrender.com";
 
 // 🧁 Helper: Read cookie value
 function getCookie(name) {

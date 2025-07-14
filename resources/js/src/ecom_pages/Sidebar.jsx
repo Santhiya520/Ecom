@@ -3,7 +3,7 @@
 // import { FaTachometerAlt, FaBoxOpen, FaClipboardList, FaSignOutAlt } from 'react-icons/fa';
 // import { useCart } from './CartContext';
 
-// const BASE_URL = "http://localhost:8000";
+// const BASE_URL = "https://ecom-6ffz.onrender.com";
 
 // // Helper to read cookie
 // function getCookie(name) {
@@ -80,7 +80,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { FaTachometerAlt, FaBoxOpen, FaClipboardList, FaSignOutAlt } from 'react-icons/fa';
 import { useCart } from './CartContext';
 
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://ecom-6ffz.onrender.com";
 
 function getCookie(name) {
   const value = `; ${document.cookie}`;
@@ -126,7 +126,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
       {/* Close button for mobile */}
       {closeSidebar && (
         <button className="close-btn d-md-none btn btn-sm btn-light mb-3 text-danger text-bold" onClick={closeSidebar}>
-          × 
+          ×
         </button>
       )}
 

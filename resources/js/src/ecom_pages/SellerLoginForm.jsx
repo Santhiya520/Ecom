@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const BASE_URL = "http://localhost:8000/api/";
+const BASE_URL = "https://ecom-6ffz.onrender.com/api/";
 
 const SellerLoginForm = () => {
   const navigate = useNavigate();

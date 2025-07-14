@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 
-const BASE_URL = 'http://localhost:8000/api';
+const BASE_URL = 'https://ecom-6ffz.onrender.com/api';
 
 const CATEGORIES = ['Electronics', 'Cloths', 'Fruits'];
 
@@ -82,7 +82,7 @@ const ProductFormModal = ({ product, onClose, onSaved }) => {
             <Form.Control type="file" onChange={handleFileChange} />
             {product?.image && (
               <img
-                src={`http://localhost:8000/${product.image}`}
+                src={`https://ecom-6ffz.onrender.com/${product.image}`}
                 alt="current"
                 width="100"
                 className="mt-2"

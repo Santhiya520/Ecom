@@ -1,7 +1,7 @@
 // import React, { useEffect, useState } from "react";
 // import Sidebar from "./Sidebar";
 
-// const BASE_URL = "http://localhost:8000/api";
+// const BASE_URL = "https://ecom-6ffz.onrender.com/api";
 
 // const Dashboard = () => {
 //   const [data, setData] = useState(null);
@@ -103,7 +103,7 @@ import Sidebar from "./Sidebar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './Dashboard.css'; // Custom CSS for sidebar animation
 
-const BASE_URL = "http://localhost:8000/api";
+const BASE_URL = "https://ecom-6ffz.onrender.com/api";
 
 const Dashboard = () => {
   const [data, setData] = useState(null);
