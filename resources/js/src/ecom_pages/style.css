@@ -1,0 +1,106 @@
+/* navbar start */
+.navbar-custom {
+  background-color: #4B0082; /* Indigo / Change as needed */
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom .dropdown-toggle {
+  /* color: #fff; */
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-item:hover {
+  color: #4B0082; /* Gold on hover */
+}
+
+/* product list */
+.card-hover:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  width: auto;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+}
+
+/* sidebar */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  max-width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1050;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-visible {
+  transform: translateX(0%);
+}
+
+.sidebar-overlay.d-none {
+  display: none !important;
+}
+
+/* Sidebar styling */
+.sidebar-container {
+  min-width: 220px;
+  max-width: 240px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #343a40;
+  border-right: 1px solid #444;
+}
+
+/* Responsive sidebar slide-in on mobile */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  max-width: 250px;
+  height: 100%;
+  background-color: #343a40;
+  z-index: 1050;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Close button */
+.close-btn {
+  font-size: 1.2rem;
+  float: right;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Table cell padding & style */
+.table td,
+.table th {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Scrollable on small devices */
+.table-responsive {
+  overflow-x: auto;
+}
+

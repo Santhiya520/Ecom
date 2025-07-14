@@ -1,0 +1,135 @@
+/* Banner section */
+.manage-banner {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.manage-banner-content {
+  padding: 2rem 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.manage-banner-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2e6ab3;
+}
+
+.manage-banner-content p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+.manage-banner-content span {
+  color: #F7A400;
+}
+
+/* Main content layout */
+.manage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  color: #1b2d55;
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e6ab3;
+  margin-bottom: 0.75rem;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #4b5563;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+/* Intro section - alternating */
+.manage-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.manage-intro.flex-row-reverse {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .manage-intro {
+    flex-direction: row;
+  }
+
+  .manage-intro.flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.manage-intro img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.manage-intro-text {
+  flex: 1;
+}
+
+.manage-intro-text h2,
+.manage-intro-text h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e6ab3;
+  margin-bottom: 1rem;
+}
+
+.manage-intro-text p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.manage-intro-text ul {
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+.manage-intro-text li {
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive handling for image alignment */
+@media (max-width: 767px) {
+  .section-title,
+  .section-description {
+    text-align: center;
+  }
+
+  .manage-intro,
+  .manage-intro.flex-row-reverse {
+    flex-direction: column !important;
+  }
+
+  .manage-intro-text h2,
+  .manage-intro-text h3 {
+    text-align: center;
+  }
+
+  .manage-intro-text p,
+  .manage-intro-text ul {
+    text-align: center;
+  }
+}

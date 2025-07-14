@@ -1,0 +1,313 @@
+ /* ================= Hero Section ================= */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -66px; /* Adjust for navbar height */
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content h6,
+.hero-content h1,
+.hero-content p,
+.hero-content button {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-content h6 {
+  animation-delay: 0.2s;
+}
+
+.hero-content h1 {
+  animation-delay: 0.4s;
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  animation-delay: 0.6s;
+  font-size: 1.1rem;
+}
+
+.hero-content button {
+  animation-delay: 0.8s;
+  padding: 10px 28px;
+  font-size: 1rem;
+}
+
+/* ================= About Section ================= */
+.about-section {
+  position: relative;
+  padding: 60px 0;
+  background-color: #fff;
+  overflow: visible;
+  z-index: 1;
+}
+
+.about-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2e6ab3;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 17px;
+  color: #3E4073;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-section .btn-primary {
+  background-color: #2e6ab3;
+  border: none;
+  padding: 10px 24px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.about-section .btn-primary:hover {
+  background-color: #003080;
+}
+
+.about-section img.img-fluid {
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.about-shape {
+  position: absolute;
+  bottom: -10%;
+  right: 16%;
+  width: 120px;
+  z-index: 0;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-shape {
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+
+/* ================= Consulting Section ================= */
+.bg-light {
+  background-color: #f9f9f9 !important;
+}
+
+section.bg-light h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2e6ab3;
+}
+
+section.bg-light p {
+  font-size: 18px;
+  color: #3E4073 !important;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e6ab3;
+}
+
+.card-text {
+  font-size: 17px;
+  color: #3E4073;
+}
+
+.text-muted{
+    font-size: 17px !important;
+    color: #3E4073 !important;
+}
+
+.card .btn-primary {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 6px 16px;
+  background-color: #2e6ab3;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+  background-color: #2e6ab3;
+}
+
+/* ================= Utility Classes ================= */
+.text-primary {
+  color: #2e6ab3 !important;
+}
+
+.btn-primary {
+  background-color: #2e6ab3 !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2e6ab3 !important;
+}
+
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scrollSlider 10s linear infinite;
+}
+
+.industry-card {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.industry-card p{
+    font-size: 17px !important;
+    color: #3E4073 !important;
+}
+
+p{
+    font-size: 17px !important;
+    color: #3E4073 !important;
+}
+
+.industry-card:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.industry-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px 10px 10px 60px;
+}
+
+.industry-card h5 {
+  margin-top: 10px;
+  color: #2e6ab3;
+  font-size: 16px;
+  font-weight: 600;
+}
+.expertise-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.expertise-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  background: rgb(46, 106, 179); /* Blue overlay for readability */
+}
+
+/* Left Text Box */
+.expertise-text {
+  flex: 1;
+  /* background-image: linear-gradient(rgba(46, 106, 179, 0.5)), url("C:/xampp/htdocs/fidespath/resources/js/src/assets/consulting_shape1.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top-left;
+  color: white;
+  padding: 40px;
+  position: relative;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+}
+
+.expertise-text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.expertise-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+    .expertise-image{
+        display: none;
+    }
+}
