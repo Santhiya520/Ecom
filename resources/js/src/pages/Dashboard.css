@@ -1,9 +1,0 @@
-.card-style {
-  border-radius: 1.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.card-style:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.15);
-}
